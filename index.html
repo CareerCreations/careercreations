@@ -1,45 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Creations - Recruitment Firm</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Creations — Recruitment Firm in Mumbai</title>
+  <meta name="description" content="Career Creations is a Mumbai-based recruitment firm (est. 2019) specializing in IT & Non‑IT hiring, leadership hiring, bulk hiring, and niche skills across India." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Career Creations — Recruitment made simple" />
+  <meta property="og:description" content="IT & Non‑IT recruitment across India. Leadership, bulk, and niche hiring. Send your CV to info@careercreations.in." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://careercreations.in/" />
+  <meta property="og:image" content="assets/hero-banner.jpg" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; text-align:center; }
-    header { background:#2c3e50; color:white; padding:20px; }
-    section { padding:40px 20px; }
-    footer { background:#2c3e50; color:white; padding:10px; }
-    a { color:#3498db; text-decoration:none; }
+    :root{
+      --bg:#0b1220;
+      --surface:#0f172a;
+      --card:#111827;
+      --muted:#94a3b8;
+      --brand:#1e3a8a; /* navy */
+      --accent:#0ea5e9; /* blue */
+      --text:#e5e7eb;
+      --line:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;height:100%}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;z-index:30;background:rgba(11,18,32,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:36px;height:36px;border-radius:8px;object-fit:contain;background:#fff}
+    .brand-name{font-weight:700;letter-spacing:.2px}
+    .nav a.btn{border:1px solid var(--line);padding:10px 14px;border-radius:12px}
+    .btn-primary{background:#22c55e;color:#052e16;border:none}
+    .btn-ghost{background:transparent}
+    section{padding:56px 0;border-bottom:1px solid var(--line)}
+    .hero{padding:0;border:none;background:linear-gradient(180deg, rgba(30,58,138,.5), rgba(2,6,23,.8)), url('assets/hero-banner.jpg') center/cover no-repeat}
+    .hero-inner{display:grid;min-height:56vh;place-items:center;text-align:center;padding:80px 24px}
+    .hero h1{font-size:clamp(28px,5vw,48px);line-height:1.1;margin:0 0 12px;font-weight:800}
+    .hero p{max-width:800px;margin:0 auto;color:#cbd5e1}
+    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    .cta a{display:inline-block;padding:12px 16px;border-radius:12px}
+    .cta .primary{background:var(--accent);color:#031525;font-weight:700}
+    .cta .outline{border:1px solid var(--line)}
+    h2.section-title{font-size:clamp(22px,3.3vw,32px);margin:0 0 8px}
+    .sub{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;gap:16px}
+    @media(min-width:800px){.grid-3{grid-template-columns:repeat(3,1fr)} .grid-2{grid-template-columns:repeat(2,1fr)}}
+    .card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .list{margin:8px 0 0;padding-left:18px}
+    .badge{display:inline-block;background:#1f2937;border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:12px;margin:4px 6px 0 0;color:#d1d5db}
+    .footer{text-align:center;color:var(--muted);padding:24px 0}
+    .kicker{text-transform:uppercase;letter-spacing:.2em;color:#60a5fa;font-size:12px;margin-bottom:6px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#0b1220;border:1px solid var(--line);color:#cbd5e1;font-size:12px}
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Career Creations",
+    "url":"https://careercreations.in/",
+    "logo":"https://careercreations.in/assets/logo.png",
+    "sameAs":["https://www.linkedin.com/company/career-creations001/"],
+    "foundingDate":"2019",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Mumbai",
+      "addressCountry":"IN"
+    },
+    "email":"info@careercreations.in"
+  }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Career Creations</h1>
-    <p>Connecting Talent with Opportunities</p>
+    <div class="container nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Career Creations logo"/>
+        <div class="brand-name">Career Creations</div>
+      </div>
+      <nav class="links">
+        <a class="btn btn-ghost" href="#about">About</a>
+        <a class="btn btn-ghost" href="#services">Services</a>
+        <a class="btn btn-ghost" href="#industries">Industries</a>
+        <a class="btn btn-ghost" href="#whyus">Why Us</a>
+        <a class="btn btn-primary" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>We are a recruitment firm helping companies hire the right talent, and job seekers find their dream careers.</p>
+  <section class="hero" aria-label="Hero">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">Recruitment • India</div>
+        <h1>Connecting Talent with Opportunity</h1>
+        <p>We are a Mumbai-based recruitment firm (est. 2019) delivering IT & Non‑IT hiring across India — from leadership and niche skills to volume hiring and employer branding.</p>
+        <div class="cta">
+          <a class="primary" href="mailto:info@careercreations.in?subject=CV%20Submission%20-%20Career%20Creations">Send Your CV</a>
+          <a class="outline" href="https://www.linkedin.com/company/career-creations001/" target="_blank" rel="noopener">Visit our LinkedIn</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Services</h2>
-    <ul style="list-style:none; padding:0;">
-      <li>✅ Recruitment Solutions</li>
-      <li>✅ Resume Screening</li>
-      <li>✅ Interview Coordination</li>
-    </ul>
+  <section id="about" aria-label="About us">
+    <div class="container">
+      <h2 class="section-title">About Career Creations</h2>
+      <p class="sub">We are more than just recruiters — we are talent strategists dedicated to building high‑performing teams that drive business success.</p>
+      <div class="card">
+        <p>Founded in 2019, Career Creations partners with startups, mid‑market, and large enterprises across India. Our team of qualified recruiters aligns skills and culture fit through deep domain expertise, proactive headhunting, and data‑backed market insights.</p>
+        <div>
+          <span class="badge">Mumbai, India</span>
+          <span class="badge">IT & Non‑IT</span>
+          <span class="badge">Leadership Hiring</span>
+          <span class="badge">Bulk Hiring</span>
+          <span class="badge">Niche Skills</span>
+          <span class="badge">Employer Branding</span>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@careercreations.in">info@careercreations.in</a></p>
-    <p>Phone: +91-XXXXXXXXXX</p>
+  <section id="services" aria-label="Our services">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="sub">Tailored hiring solutions that scale with your business.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Leadership Hiring</h3>
+          <p>Identify and place visionary leaders who transform businesses and culture.</p>
+        </div>
+        <div class="card">
+          <h3>Volume & Bulk Hiring</h3>
+          <p>Agile, scalable hiring to meet aggressive ramp‑up needs without compromising quality.</p>
+        </div>
+        <div class="card">
+          <h3>Niche Skill Recruitment</h3>
+          <p>Source specialized, in‑demand talent through research‑driven headhunting.</p>
+        </div>
+        <div class="card">
+          <h3>Executive Search</h3>
+          <p>Discreet search for senior leadership & critical roles aligned to your strategy.</p>
+        </div>
+        <div class="card">
+          <h3>Recruitment Process Outsourcing (RPO)</h3>
+          <p>End‑to‑end recruitment ownership — from sourcing and screening to offer management.</p>
+        </div>
+        <div class="card">
+          <h3>Employer Branding</h3>
+          <p>Strengthen your market presence and candidate experience to attract top talent.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Career Creations. All rights reserved.</p>
-  </footer>
+  <section id="industries" aria-label="Industries we serve">
+    <div class="container">
+      <h2 class="section-title">Industries We Serve</h2>
+      <p class="sub">Coverage across technology and business functions.</p>
+      <div class="grid grid-3">
+        <div class="card"><h3>IT & ITeS</h3><p>Product, Services, Cloud, Cybersecurity, Data & AI.</p></div>
+        <div class="card"><h3>BFSI</h3><p>Banking, Financial Services & Insurance.</p></div>
+        <div class="card"><h3>Manufacturing & Engineering</h3><p>Operations, Supply Chain, Quality, EHS.</p></div>
+        <div class="card"><h3>Pharma, Healthcare & Life Sciences</h3><p>R&D, QA, Regulatory, Clinical.</p></div>
+        <div class="card"><h3>FMCG, Retail & E‑Commerce</h3><p>Sales, Marketing, Category, Growth.</p></div>
+        <div class="card"><h3>Media, Advertising & Start‑ups</h3><p>Creative, Performance, Product & Growth roles.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="whyus" aria-label="Why partner with us">
+    <div class="container">
+      <h2 class="section-title">Why Partner with Us</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Precision Matching</h3>
+          <p>Only the most relevant, high‑quality profiles — aligned on skills and culture.</p>
+        </div>
+        <div class="card">
+          <h3>Speed & Efficiency</h3>
+          <p>Optimized process and strong pipeline to reduce time‑to‑hire.</p>
+        </div>
+        <div class="card">
+          <h3>Tailored Solutions</h3>
+          <p>Flexible engagement models for different growth stages and functions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="sub">We’d love to support your next hire or help you find your next role.</p>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:info@careercreations.in">info@careercreations.in</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/career-creations001/" target="_blank" rel="noopener">Career Creations</a></p>
+        <p><span class="pill">Mumbai • Since 2019</span></p>
+      </div>
+      <div class="cta" style="margin-top:16px">
+        <a class="primary" href="mailto:info@careercreations.in?subject=Hire%20with%20Career%20Creations">Hire Talent</a>
+        <a class="outline" href="mailto:info@careercreations.in?subject=CV%20Submission">Submit CV</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <img src="assets/logo.png" alt="Career Creations logo small" style="width:28px;height:28px;vertical-align:middle;background:#fff;border-radius:6px;margin-right:8px" />
+      © <span id="year"></span> Career Creations. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
