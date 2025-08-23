@@ -1,74 +1,87 @@
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
 }
-
-.site-header {
+header {
+  background: #ffffff;
+  border-bottom: 2px solid #eee;
+}
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  background: #0a0a23;
+  padding: 10px 20px;
 }
-
-.site-header .logo img {
+.logo {
   height: 50px;
 }
-
-.nav-links a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.contact-btn {
-  padding: 6px 14px;
-  background: #2ecc71;
-  border-radius: 6px;
-}
-
-.hero {
-  background: url('assets/abstract-bg.png') no-repeat center center/cover;
-  position: relative;
-  height: 80vh;
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 20px;
 }
-
-.hero-overlay {
-  background: rgba(0,0,0,0.45);
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-
-.hero-buttons .btn,
-.hero-buttons .btn-outline {
+nav a {
   text-decoration: none;
-  padding: 10px 20px;
-  margin: 0 10px;
-  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
 }
-
-.btn {
-  background: #3498db;
-  color: #fff;
+.hero {
+  background: url('assets/hero-banner.jpg') center/cover no-repeat, #eef3f7;
+  text-align: center;
+  padding: 100px 20px;
 }
-
-.btn-outline {
-  border: 1px solid #fff;
-  color: #fff;
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.2em;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.light-section, .white-section {
+  background: #ffffff;
+  margin: 20px 0;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+h2 {
+  color: #004080;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-box input, .form-box button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #004080;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #0066cc;
+}
+footer {
+  background: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
 }
